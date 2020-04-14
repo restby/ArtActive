@@ -78,9 +78,9 @@ gulp.task("serverStart", function () {
     server: "source/",
   });
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
-  gulp.watch("source/*.js").on("change", server.reload);
-  gulp.watch("source/*.svg").on("change", server.reload);
+  gulp.watch("source/**/*.html").on("change", server.reload);
+  gulp.watch("source/**/*.js").on("change", server.reload);
+  gulp.watch("source/**/*.svg").on("change", server.reload);
 });
 /**BEFORE */
 

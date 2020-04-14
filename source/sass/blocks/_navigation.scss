@@ -1,5 +1,5 @@
 .navigation {
-  // display: none;
+  display: none;
   background-color: $white-color;
   padding-left: 65px;
   padding-top: 60px;
@@ -8,11 +8,7 @@
   top: 0;
   left: 0;
   transform: translateY(-370px);
-  z-index: 2;
-
-  &--open {
-    display: block;
-  }
+  z-index: 1;
 
   &__list {
     @include list-reset;
