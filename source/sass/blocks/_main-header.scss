@@ -1,86 +1,122 @@
 .main-header {
-  min-height: 950px;
-  padding-top: 70px;
+  min-height: 830px;
+  padding-top: 20px;
   background-color: $main-color;
-  background-image: url("../../img/bg-header.desktop.png");
-  background-position: -310px 0;
+  background-image: url("../../img/bg-header.mobile.png");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  // background-size: cover;
-
-  &__phone-link {
-    margin-left: 65px;
-    margin-top: 4px;
-    font-family: "OpenSansBold", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
-    color: $white-color;
-    text-decoration: none;
-  }
-
-  &__nav-btn {
-    width: 165px;
-    padding-top: 8px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
-    min-height: 34px;
-    margin-left: 36px;
-    font-size: 11px;
-    line-height: 1.2;
-    color: $white-color;
-    background-color: transparent;
-    border: 2px solid $white-color;
-    border-radius: 16px;
-  }
+  position: relative;
 
   &__lead {
     display: inline-block;
+    margin-bottom: 35px;
     font-family: "MullerExtraBold", "Arial", sans-serif;
-    font-size: 60px;
+    font-size: 36px;
     line-height: 1.2;
     font-weight: 800;
     color: $white-color;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
   }
 
   &__descr {
-    width: 428px;
     margin: 0;
-    margin-bottom: 75px;
+    margin-bottom: 45px;
     font-family: "MullerMedium", "Arial", sans-serif;
-    font-size: 32px;
+    font-size: 21px;
     line-height: 1.2;
     font-weight: 500;
     color: $white-color;
     letter-spacing: 0;
   }
 
-  &__wrap {
-    display: flex;
-    align-items: flex-start;
-  }
-
   &__btn {
-    min-width: 247px;
-    margin-right: 25px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%;
+    margin-bottom: 35px;
   }
 
   &__small-text {
     display: inline-block;
-    width: 220px;
     font-size: 16px;
     line-height: 1.2;
     color: $white-color;
     letter-spacing: 0;
   }
 
-  & .col-xl-12 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  &__nav-btn {
+    background-image: url("../../img/menu-icon.png");
+    width: 25px;
+    height: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(-15px) translateY(23px);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    min-height: 599px;
+    padding-top: 25px;
+    background-image: url("../../img/bg-header.tablet.png");
+
+    &__lead {
+      margin-bottom: 40px;
+      font-size: 45px;
+    }
+
+    &__descr {
+      margin-bottom: 35px;
+    }
+
+    &__btn {
+      width: 247px;
+      margin-bottom: 25px;
+    }
+
+    &__nav-btn {
+      transform: translateX(-31px) translateY(27px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    min-height: 940px;
+    padding-top: 65px;
+    background-image: url("../../img/bg-header.desktop.png");
+
+    &__lead {
+      margin-bottom: 55px;
+      font-size: 60px;
+    }
+
+    &__descr {
+      margin-bottom: 75px;
+      font-size: 32px;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__btn {
+      width: 247px;
+      margin-right: 25px;
+      margin-bottom: 0;
+    }
+
+    &__small-text {
+      display: inline-block;
+      width: 210px;
+    }
+
+    &__nav-btn {
+      display: none;
+    }
+  }
+}
+

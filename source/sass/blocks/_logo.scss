@@ -1,6 +1,7 @@
 .logo {
   &__link {
     display: block;
+    margin-bottom: 345px;
     font-family: "OpenSansExtraBold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 1.2;
@@ -8,5 +9,13 @@
     color: $white-color;
     text-decoration: none;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    &__link {
+      margin-bottom: 55px;
+    }
   }
 }

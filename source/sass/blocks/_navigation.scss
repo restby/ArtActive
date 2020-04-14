@@ -1,30 +1,119 @@
 .navigation {
-  margin-left: auto;
-  margin-bottom: 135px;
+  // display: none;
+  background-color: $white-color;
+  padding-left: 65px;
+  padding-top: 60px;
+  padding-bottom: 155px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-370px);
+  z-index: 2;
+
+  &--open {
+    display: block;
+  }
 
   &__list {
     @include list-reset;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    & li {
-      margin-left: 55px;
-
-      &:first-child {
-        margin-left: 0;
-      }
-    }
+    margin-bottom: 100px;
   }
 
   &__link {
     font-family: "OpenSansSemiBold", "Arial", sans-serif;
     font-size: 13px;
-    line-height: 1.2;
+    line-height: 48px;
     font-weight: 600;
-    color: $white-color;
-    letter-spacing: 0.05em;
+    color: $text-color;
     text-decoration: none;
     text-transform: uppercase;
+  }
+
+  &__phone-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-family: "OpenSansBold", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &__call-btn {
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 34px;
+    font-size: 11px;
+    line-height: 1.2;
+    color: $active-color;
+    background-color: transparent;
+    border: 2px solid $active-color;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    left: auto;
+    right: 0;
+    transform: translateY(-101px) translateX(450px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: translateY(0) translateX(0);
+    z-index: 2;
+
+    &__list {
+      width: 490px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__link {
+      line-height: 1.2;
+      color: $white-color;
+    }
+
+    &__phone-link {
+      margin-top: 4px;
+      margin-bottom: 0;
+      margin-left: 65px;
+      color: $white-color;
+    }
+
+    &__call-btn {
+      margin-left: 35px;
+      color: $white-color;
+      background-color: transparent;
+      border: 2px solid $white-color;
+      border-radius: 16px;
+    }
+
+    &__btn {
+      background-image: url("../../img/menu-icon.png");
+      width: 25px;
+      height: 16px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
   }
 }

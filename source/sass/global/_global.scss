@@ -19,11 +19,11 @@ img {
   box-sizing: border-box;
 }
 
-.link {
+.btn {
   padding-top: 13px;
   padding-bottom: 15px;
-  padding-left: 43px;
-  padding-right: 43px;
+  padding-left: 16px;
+  padding-right: 16px;
   min-height: 48px;
   border: none;
   border-radius: 24px;
@@ -33,6 +33,7 @@ img {
   line-height: 1.2;
   color: $white-color;
   font-weight: 700;
+  letter-spacing: 0.05em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
