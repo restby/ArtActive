@@ -1,9 +1,46 @@
 $(function () {
+    let win_w = $(window).width();
+
     $(".main-header__nav-btn").click(function (e) {
       e.preventDefault();
       $(".navigation").slideToggle("slow");
       $(this).toggleClass("main-header__nav-btn--open");
+      $(".overlay").slideToggle("fast");
     });
+
+    if (win_w < 1170) {
+      $(".navigation__call-btn").click(function (e) {
+        e.preventDefault();
+        $(".navigation").slideToggle("slow");
+        $(".form").slideToggle("slow");
+        $(".main-header__nav-btn").toggleClass("main-header__nav-btn--open");
+      });
+    } else {
+      $(".navigation__call-btn").click(function (e) {
+        e.preventDefault();
+        $(".form").slideToggle("slow");
+        $(".overlay").slideToggle("fast");
+      });
+    }
+
+    $(".main-header__btn").click(function (e) {
+      e.preventDefault();
+      $(".form").slideToggle("slow");
+      $(".overlay").slideToggle("fast");
+    });
+
+    $(".form__close-btn").click(function (e) {
+      e.preventDefault();
+      $(".form").slideToggle("slow");
+      $(".overlay").slideToggle("fast");
+    });
+
+    $(".form__submit-btn").click(function (e) {
+      e.preventDefault();
+      $(".form").slideToggle("slow");
+      $(".overlay").slideToggle("fast");
+    });
+
 
   /*slick settings*/
   // $("#reviews-slick").slick({

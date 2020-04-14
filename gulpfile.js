@@ -76,6 +76,7 @@ gulp.task("css", function () {
 gulp.task("serverStart", function () {
   server.init({
     server: "source/",
+    notify: false
   });
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/**/*.html").on("change", server.reload);
