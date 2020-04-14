@@ -43,7 +43,8 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "edit": "gulp edit",
-    "start": "gulp start"
+    "start": "gulp start",
+    "svgedit": "gulp svgedit"
   },
   "editorconfig-cli": [
     "*.json",

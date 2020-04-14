@@ -1,0 +1,12 @@
+.logo {
+  &__link {
+    display: block;
+    font-family: "OpenSansExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: $white-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

@@ -1,23 +1,63 @@
 @font-face {
-  font-family: "RobotoSlabRegular";
-  src: url("../../fonts/RobotoSlab-Regular.woff2") format("woff2"),
-    url("../../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-family: "MullerMedium";
+  src: url("../../fonts/MullerMedium.woff2") format("woff2"),
+    url("../../fonts/MullerMedium.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "RalewayBold";
-  src: url("../../fonts/Raleway-Bold.woff2") format("woff2"),
-    url("../../fonts/Raleway-Bold.woff") format("woff");
+  font-family: "MullerExtraBold";
+  src: url("../../fonts/MullerExtraBold.woff2") format("woff2"),
+    url("../../fonts/MullerExtraBold.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "RalewayRegular";
-  src: url("../../fonts/Raleway-Regular.woff2") format("woff2"),
-    url("../../fonts/Raleway-Regular.woff") format("woff");
+  font-family: "MullerHeavy";
+  src: url("../../fonts/MullerHeavy.woff2") format("woff2"),
+    url("../../fonts/MullerHeavy.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("../../fonts/OpenSansItalic.woff2") format("woff2"),
+    url("../../fonts/OpenSansItalic.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../../fonts/OpenSansRegular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../../fonts/OpenSansSemiBold.woff2") format("woff2"),
+    url("../../fonts/OpenSansSemiBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../../fonts/OpenSansBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../../fonts/OpenSansExtraBold.woff2") format("woff2"),
+    url("../../fonts/OpenSansExtraBold.woff") format("woff");
   font-style: normal;
   font-display: swap;
 }

@@ -1,8 +1,8 @@
 body {
   @include ma-pa-reset;
-  font-family: "RobotoSlabRegular", "Arial", sans-serif;
+  font-family: "OpenSansRegular", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 48px;
+  line-height: 24px;
   font-weight: 400;
   color: $text-color;
   letter-spacing: 0.05em;
@@ -20,21 +20,29 @@ img {
 }
 
 .link {
-  display: block;
-  margin: 0 auto;
-  width: 202px;
-  min-height: 47px;
-  background-color: $main-color;
-  font-size: 14px;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 43px;
+  padding-right: 43px;
+  min-height: 48px;
+  border: none;
+  border-radius: 24px;
+  background-color: $active-color;
+  font-family: "OpenSansBold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
   color: $white-color;
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.section-title {
-  @include ma-pa-reset;
-  text-align: center;
-  font-family: "RalewayBold", "Arial", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-}
+// .section-title {
+//   @include ma-pa-reset;
+//   text-align: center;
+//   font-family: "RalewayBold", "Arial", sans-serif;
+//   font-size: 30px;
+//   font-weight: 700;
+// }
