@@ -3269,46 +3269,171 @@ html {
     margin-bottom: 30px;
     letter-spacing: 0; }
     .about__descr:last-of-type {
-      margin-bottom: 130px; }
-  .about__list {
+      margin-bottom: 0; }
+  .about__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/bg-about.mobile.png");
+    background-position: 106px 106px;
+    background-repeat: no-repeat;
+    padding-top: 150px; }
+  .about__item {
+    position: relative;
     margin: 0;
-    margin-top: 35px;
-    padding: 0;
-    list-style: none; }
-    .about__list li {
-      position: relative;
-      font-size: 13px;
-      letter-spacing: 0;
-      line-height: 18px;
-      text-align: center; }
-      .about__list li::before {
-        -webkit-transform: translateY(-116px) translateX(-50%);
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateY(-116px) translateX(-50%);
-        border-radius: 50%;
-        background-color: #f0e2ff;
-        width: 106px;
-        height: 106px;
-        content: ""; }
-      .about__list li::after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        content: ""; }
-  .about__item-offer {
-    margin: 0 auto;
-    margin-bottom: 45px;
-    width: 140px; }
-    .about__item-offer::after {
-      -webkit-transform: translateY(-104px) translateX(-22px);
-      transform: translateY(-104px) translateX(-22px);
-      background-image: url("../../img/ebook.svg");
-      width: 54px;
-      height: 45px; }
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center; }
+    .about__item::before {
+      -webkit-transform: translateY(-116px) translateX(-50%);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateY(-116px) translateX(-50%);
+      border-radius: 50%;
+      background-color: #f0e2ff;
+      width: 106px;
+      height: 106px;
+      content: ""; }
+    .about__item::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      content: ""; }
+    .about__item--offer {
+      -ms-flex-item-align: center;
+      align-self: center;
+      margin-bottom: 150px;
+      width: 140px; }
+      .about__item--offer::after {
+        -webkit-transform: translateX(-22px) translateY(-86px);
+        transform: translateX(-22px) translateY(-86px);
+        background-image: url("../../img/ebook.svg");
+        width: 54px;
+        height: 45px; }
+    .about__item--design {
+      -ms-flex-item-align: end;
+      align-self: end;
+      margin-bottom: 40px;
+      width: 95px; }
+      .about__item--design::after {
+        -webkit-transform: translateX(-22px) translateY(-86px);
+        transform: translateX(-22px) translateY(-86px);
+        background-image: url("../../img/tablet.svg");
+        width: 47px;
+        height: 45px; }
+    .about__item--print {
+      -ms-flex-item-align: start;
+      align-self: start;
+      margin-bottom: 170px;
+      width: 125px; }
+      .about__item--print::after {
+        -webkit-transform: translateX(-22px) translateY(-86px);
+        transform: translateX(-22px) translateY(-86px);
+        background-image: url("../../img/writer.svg");
+        width: 54px;
+        height: 54px; }
+    .about__item--delivery {
+      -ms-flex-item-align: center;
+      align-self: center;
+      margin-bottom: 0;
+      width: 125px; }
+      .about__item--delivery::after {
+        -webkit-transform: translateX(-22px) translateY(-86px);
+        transform: translateX(-22px) translateY(-86px);
+        background-image: url("../../img/moving.svg");
+        width: 71px;
+        height: 41px; }
+
+@media (min-width: 780px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 140px; }
+    .about__title {
+      margin-bottom: 60px; }
+    .about__lead {
+      margin-bottom: 35px;
+      font-size: 32px; }
+    .about__wrap {
+      background-image: url("../../img/bg-about.tablet.png");
+      background-position: 118px 90px;
+      background-repeat: no-repeat;
+      padding-top: 170px; }
+    .about__item {
+      font-size: 14px;
+      line-height: 24px; }
+      .about__item--offer {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 50px;
+        margin-left: 180px; }
+      .about__item--design {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 20px;
+        margin-left: 590px; }
+      .about__item--print {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 70px;
+        margin-left: 20px; }
+      .about__item--delivery {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-left: 380px; } }
+
+@media (min-width: 1170px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 140px; }
+    .about .container {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-between; }
+      .about .container .row {
+        width: 50%; }
+    .about__title {
+      margin-bottom: 60px; }
+    .about__lead {
+      margin-bottom: 35px;
+      font-size: 32px; }
+    .about__wrap {
+      background-image: url("../../img/bg-about.tablet.png");
+      background-position: 118px 90px;
+      background-repeat: no-repeat;
+      padding-top: 170px; }
+    .about__item {
+      font-size: 14px;
+      line-height: 24px; }
+      .about__item--offer {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 50px;
+        margin-left: 180px; }
+      .about__item--design {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 20px;
+        margin-left: 590px; }
+      .about__item--print {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-bottom: 70px;
+        margin-left: 20px; }
+      .about__item--delivery {
+        -ms-flex-item-align: start;
+        align-self: start;
+        margin-left: 380px; } }
 
 .form {
   -webkit-transform: translateX(-50%);

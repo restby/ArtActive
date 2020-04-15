@@ -16,58 +16,209 @@
     letter-spacing: 0;
 
     &:last-of-type {
-      margin-bottom: 130px;
+      margin-bottom: 0;
     }
   }
 
-  &__list {
-    @include list-reset;
-    margin-top: 35px;
-
-    & li {
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0;
-      text-align: center;
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 50%;
-        width: 106px;
-        height: 106px;
-        border-radius: 50%;
-        background-color: #f0e2ff;
-        transform: translateY(-116px) translateX(-50%);
-      }
-
-      &::after {
-        position: absolute;
-        content: "";
-        top: 50%;
-        left: 50%;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-      }
-    }
+  &__wrap {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../img/bg-about.mobile.png");
+    background-repeat: no-repeat;
+    background-position: 106px 106px;
   }
 
-  &__item-offer {
-    width: 140px;
-    margin: 0 auto;
-    margin-bottom: 45px;
+  &__item {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      width: 106px;
+      height: 106px;
+      border-radius: 50%;
+      background-color: #f0e2ff;
+      transform: translateY(-116px) translateX(-50%);
+    }
 
     &::after {
-      width: 54px;
-      height: 45px;
-      background-image: url("../../img/ebook.svg");
-      transform: translateY(-104px) translateX(-22px);
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--offer {
+      width: 140px;
+      margin-bottom: 150px;
+      align-self: center;
+
+      &::after {
+        width: 54px;
+        height: 45px;
+        background-image: url("../../img/ebook.svg");
+        transform: translateX(-22px) translateY(-86px);
+      }
+    }
+
+    &--design {
+      width: 95px;
+      align-self: end;
+      margin-bottom: 40px;
+
+      &::after {
+        width: 47px;
+        height: 45px;
+        background-image: url("../../img/tablet.svg");
+        transform: translateX(-22px) translateY(-86px);
+      }
+    }
+
+    &--print {
+      width: 125px;
+      align-self: start;
+      margin-bottom: 170px;
+
+      &::after {
+        width: 54px;
+        height: 54px;
+        background-image: url("../../img/writer.svg");
+        transform: translateX(-22px) translateY(-86px);
+      }
+    }
+
+    &--delivery {
+      width: 125px;
+      align-self: center;
+      margin-bottom: 0;
+
+      &::after {
+        width: 71px;
+        height: 41px;
+        background-image: url("../../img/moving.svg");
+        transform: translateX(-22px) translateY(-86px);
+      }
     }
   }
 }
 
-@media (min-width: $tablet-width) {}
+@media (min-width: $tablet-width) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 140px;
 
-@media (min-width: $desktop-width) {}
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__lead {
+      margin-bottom: 35px;
+      font-size: 32px;
+    }
+
+    &__wrap {
+      padding-top: 170px;
+      background-image: url("../../img/bg-about.tablet.png");
+      background-repeat: no-repeat;
+      background-position: 118px 90px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 24px;
+
+      &--offer {
+        margin-bottom: 50px;
+        margin-left: 180px;
+        align-self: start;
+      }
+
+      &--design {
+        align-self: start;
+        margin-bottom: 20px;
+        margin-left: 590px;
+      }
+
+      &--print {
+        align-self: start;
+        margin-bottom: 70px;
+        margin-left: 20px;
+      }
+
+      &--delivery {
+        align-self: start;
+        margin-left: 380px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 140px;
+
+    & .container {
+      display: flex;
+      justify-content: space-between;
+
+      & .row {
+        width: 50%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__lead {
+      margin-bottom: 35px;
+      font-size: 32px;
+    }
+
+    &__wrap {
+      padding-top: 170px;
+      background-image: url("../../img/bg-about.tablet.png");
+      background-repeat: no-repeat;
+      background-position: 118px 90px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 24px;
+
+      &--offer {
+        margin-bottom: 50px;
+        margin-left: 180px;
+        align-self: start;
+      }
+
+      &--design {
+        align-self: start;
+        margin-bottom: 20px;
+        margin-left: 590px;
+      }
+
+      &--print {
+        align-self: start;
+        margin-bottom: 70px;
+        margin-left: 20px;
+      }
+
+      &--delivery {
+        align-self: start;
+        margin-left: 380px;
+      }
+    }
+  }
+}
