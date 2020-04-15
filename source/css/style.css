@@ -324,6 +324,12 @@ input[type="radio"].visually-hidden {
   font-style: normal; }
 
 @font-face {
+  src: url("../../fonts/MullerBold.woff2") format("woff2"), url("../../fonts/MullerBold.woff") format("woff");
+  font-display: swap;
+  font-family: "MullerBold";
+  font-style: normal; }
+
+@font-face {
   src: url("../../fonts/MullerExtraBold.woff2") format("woff2"), url("../../fonts/MullerExtraBold.woff") format("woff");
   font-display: swap;
   font-family: "MullerExtraBold";
@@ -372,7 +378,7 @@ body {
   padding: 0;
   color: #5e606a;
   font-family: "OpenSansRegular", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.05em;
   line-height: 24px; }
@@ -414,6 +420,25 @@ img {
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%; }
+
+.section-title {
+  margin: 0;
+  color: #7f38bd;
+  font-family: "MullerBold", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2; }
+
+.section-lead {
+  display: block;
+  margin: 0;
+  color: #383d52;
+  font-family: "MullerMedium", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2; }
 
 /*stylelint-disable*/
 /*!
@@ -3232,6 +3257,59 @@ html {
       width: 25px;
       height: 16px; } }
 
+.about {
+  padding-top: 35px;
+  padding-bottom: 55px; }
+  .about__title {
+    margin-bottom: 35px; }
+  .about__lead {
+    margin-bottom: 40px; }
+  .about__descr {
+    margin: 0;
+    margin-bottom: 30px;
+    letter-spacing: 0; }
+    .about__descr:last-of-type {
+      margin-bottom: 130px; }
+  .about__list {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    list-style: none; }
+    .about__list li {
+      position: relative;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 18px;
+      text-align: center; }
+      .about__list li::before {
+        -webkit-transform: translateY(-116px) translateX(-50%);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateY(-116px) translateX(-50%);
+        border-radius: 50%;
+        background-color: #f0e2ff;
+        width: 106px;
+        height: 106px;
+        content: ""; }
+      .about__list li::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        content: ""; }
+  .about__item-offer {
+    margin: 0 auto;
+    margin-bottom: 45px;
+    width: 140px; }
+    .about__item-offer::after {
+      -webkit-transform: translateY(-104px) translateX(-22px);
+      transform: translateY(-104px) translateX(-22px);
+      background-image: url("../../img/ebook.svg");
+      width: 54px;
+      height: 45px; }
+
 .form {
   -webkit-transform: translateX(-50%);
   display: none;
@@ -3298,35 +3376,38 @@ html {
       font-weight: 400; }
   .form__submit-btn {
     width: 100%; }
+  .form__close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px; }
+    .form__close-btn::before {
+      -webkit-transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: rotate(45deg);
+      z-index: 5;
+      background-color: #ffffff;
+      width: 16px;
+      height: 1px;
+      content: ""; }
+    .form__close-btn::after {
+      -webkit-transform: rotate(-45deg);
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: rotate(-45deg);
+      z-index: 5;
+      background-color: #ffffff;
+      width: 16px;
+      height: 1px;
+      content: ""; }
 
-.form__close-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  width: 16px;
-  height: 16px; }
-  .form__close-btn::before {
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: rotate(45deg);
-    z-index: 5;
-    background-color: #ffffff;
-    width: 16px;
-    height: 1px;
-    content: ""; }
-  .form__close-btn::after {
-    -webkit-transform: rotate(-45deg);
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: rotate(-45deg);
-    z-index: 5;
-    background-color: #ffffff;
-    width: 16px;
-    height: 1px;
-    content: ""; }
+@media (min-width: 780px) {
+  .form {
+    width: 360px; } }

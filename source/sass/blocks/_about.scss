@@ -1,0 +1,73 @@
+.about {
+  padding-top: 35px;
+  padding-bottom: 55px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__lead {
+    margin-bottom: 40px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+
+    &:last-of-type {
+      margin-bottom: 130px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    margin-top: 35px;
+
+    & li {
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0;
+      text-align: center;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        background-color: #f0e2ff;
+        transform: translateY(-116px) translateX(-50%);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+
+  &__item-offer {
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+
+    &::after {
+      width: 54px;
+      height: 45px;
+      background-image: url("../../img/ebook.svg");
+      transform: translateY(-104px) translateX(-22px);
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {}

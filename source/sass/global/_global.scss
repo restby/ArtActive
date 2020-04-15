@@ -1,7 +1,7 @@
 body {
   @include ma-pa-reset;
   font-family: "OpenSansRegular", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: $text-color;
@@ -51,10 +51,23 @@ img {
   z-index: 1;
 }
 
-// .section-title {
-//   @include ma-pa-reset;
-//   text-align: center;
-//   font-family: "RalewayBold", "Arial", sans-serif;
-//   font-size: 30px;
-//   font-weight: 700;
-// }
+.section-title {
+  margin: 0;
+  font-family: "MullerBold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $section-title-color;
+  letter-spacing: 0;
+}
+
+.section-lead {
+  display: block;
+  margin: 0;
+  font-family: "MullerMedium", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: $heading-color;
+  letter-spacing: 0;
+}

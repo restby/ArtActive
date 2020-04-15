@@ -7,6 +7,14 @@
 }
 
 @font-face {
+  font-family: "MullerBold";
+  src: url("../../fonts/MullerBold.woff2") format("woff2"),
+    url("../../fonts/MullerBold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "MullerExtraBold";
   src: url("../../fonts/MullerExtraBold.woff2") format("woff2"),
     url("../../fonts/MullerExtraBold.woff") format("woff");
