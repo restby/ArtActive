@@ -3363,26 +3363,26 @@ html {
       font-size: 32px; }
     .about__wrap {
       background-image: url("../../img/bg-about.tablet.png");
-      background-position: 118px 90px;
+      background-position: 116px 100px;
       background-repeat: no-repeat;
-      padding-top: 170px; }
+      padding-top: 150px; }
     .about__item {
       font-size: 14px;
       line-height: 24px; }
       .about__item--offer {
         -ms-flex-item-align: start;
         align-self: start;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         margin-left: 180px; }
       .about__item--design {
         -ms-flex-item-align: start;
         align-self: start;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         margin-left: 590px; }
       .about__item--print {
         -ms-flex-item-align: start;
         align-self: start;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
         margin-left: 20px; }
       .about__item--delivery {
         -ms-flex-item-align: start;

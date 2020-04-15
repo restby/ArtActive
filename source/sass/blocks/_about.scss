@@ -127,10 +127,10 @@
     }
 
     &__wrap {
-      padding-top: 170px;
+      padding-top: 150px;
       background-image: url("../../img/bg-about.tablet.png");
       background-repeat: no-repeat;
-      background-position: 118px 90px;
+      background-position: 116px 100px;
     }
 
     &__item {
@@ -138,20 +138,20 @@
       line-height: 24px;
 
       &--offer {
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         margin-left: 180px;
         align-self: start;
       }
 
       &--design {
         align-self: start;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         margin-left: 590px;
       }
 
       &--print {
         align-self: start;
-        margin-bottom: 70px;
+        margin-bottom: 20px;
         margin-left: 20px;
       }
 
