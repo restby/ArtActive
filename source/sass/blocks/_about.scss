@@ -171,9 +171,14 @@
     & .container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
 
       & .row {
         width: 50%;
+
+        &:first-child {
+          order: 1;
+        }
       }
     }
 
@@ -187,37 +192,33 @@
     }
 
     &__wrap {
-      padding-top: 170px;
-      background-image: url("../../img/bg-about.tablet.png");
+      padding-top: 110px;
+      background-image: url("../../img/bg-about.desktop.png");
       background-repeat: no-repeat;
-      background-position: 118px 90px;
+      background-position: 116px 60px;
     }
 
     &__item {
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 13px;
+      line-height: 18px;
 
       &--offer {
-        margin-bottom: 50px;
+        margin-bottom: 90px;
         margin-left: 180px;
-        align-self: start;
       }
 
       &--design {
-        align-self: start;
-        margin-bottom: 20px;
-        margin-left: 590px;
+        margin-bottom: 0;
+        margin-left: 430px;
       }
 
       &--print {
-        align-self: start;
         margin-bottom: 70px;
         margin-left: 20px;
       }
 
       &--delivery {
-        align-self: start;
-        margin-left: 380px;
+        margin-left: 240px;
       }
     }
   }

@@ -3396,44 +3396,56 @@ html {
     .about .container {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
+      -ms-flex-wrap: wrap;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between; }
       .about .container .row {
         width: 50%; }
+        .about .container .row:first-child {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1; }
     .about__title {
       margin-bottom: 60px; }
     .about__lead {
       margin-bottom: 35px;
       font-size: 32px; }
     .about__wrap {
-      background-image: url("../../img/bg-about.tablet.png");
-      background-position: 118px 90px;
+      background-image: url("../../img/bg-about.desktop.png");
+      background-position: 116px 60px;
       background-repeat: no-repeat;
-      padding-top: 170px; }
+      padding-top: 110px; }
     .about__item {
-      font-size: 14px;
-      line-height: 24px; }
+      font-size: 13px;
+      line-height: 18px; }
       .about__item--offer {
-        -ms-flex-item-align: start;
-        align-self: start;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
         margin-left: 180px; }
       .about__item--design {
-        -ms-flex-item-align: start;
-        align-self: start;
-        margin-bottom: 20px;
-        margin-left: 590px; }
+        margin-bottom: 0;
+        margin-left: 430px; }
       .about__item--print {
-        -ms-flex-item-align: start;
-        align-self: start;
         margin-bottom: 70px;
         margin-left: 20px; }
       .about__item--delivery {
-        -ms-flex-item-align: start;
-        align-self: start;
-        margin-left: 380px; } }
+        margin-left: 240px; } }
+
+.services {
+  padding-top: 65px;
+  padding-bottom: 60px; }
+  .services__title {
+    margin-bottom: 45px; }
+  .services__lead {
+    margin-bottom: 50px; }
+  .services__print-list {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 20px; }
+  .services__slider-img {
+    display: block; }
 
 .form {
   -webkit-transform: translateX(-50%);
