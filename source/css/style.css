@@ -3434,16 +3434,9 @@ html {
         margin-left: 240px; } }
 
 .services {
-  padding-top: 65px;
   padding-bottom: 60px; }
   .services__title {
     margin-bottom: 45px; }
-  .services__lead {
-    margin-bottom: 50px; }
-  .services__print-list {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 20px; }
   .services__slider {
     margin-bottom: 40px; }
     .services__slider-item {
@@ -3469,15 +3462,16 @@ html {
       .services__slider-btn--right {
         background-image: url("../../img/arrow-right.png"); }
   .services__consult {
-    -webkit-box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
-    margin-bottom: 70px;
-    box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
-    border-radius: 16px;
-    background-color: #65269d;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-bottom: 30px;
-    padding-left: 20px; }
+    margin-bottom: 70px; }
+    .services__consult-wrap {
+      -webkit-box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+      box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+      border-radius: 16px;
+      background-color: #65269d;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 20px; }
     .services__consult i {
       display: block;
       margin-bottom: 10px;
@@ -3498,9 +3492,7 @@ html {
     .services__consult-btn {
       width: 100%; }
   .services__interior {
-    background-image: url("../../img/print-img.mobile.png");
-    background-position: 0 300px;
-    background-repeat: no-repeat;
+    padding-top: 70px;
     padding-bottom: 200px; }
     .services__interior-lead {
       margin-bottom: 40px; }
@@ -3509,14 +3501,29 @@ html {
       margin-bottom: 45px; }
     .services__interior-btn {
       width: 100%; }
+  .services__banner {
+    padding-top: 70px; }
+    .services__banner-lead {
+      margin-bottom: 50px; }
+    .services__banner-text {
+      margin-bottom: 30px; }
+
+.print {
+  padding-top: 65px; }
+  .print__lead {
+    margin-bottom: 50px; }
+  .print__list {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 20px; }
 
 .form {
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
   display: none;
-  position: absolute;
-  top: 20%;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 2;
   border-radius: 10px;
   background-color: #7f38bd;
