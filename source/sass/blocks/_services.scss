@@ -1,6 +1,11 @@
 .services {
   padding-bottom: 60px;
 
+  & .row:first-child {
+    padding-top: 70px;
+    background-color: #faf8fb;
+  }
+
   // & .row:nth-child(-n+3),
   // & .row:nth-child(5) {
   //   background-color: #faf8fb;
@@ -14,44 +19,6 @@
 
   &__title {
     margin-bottom: 45px;
-  }
-
-  &__slider {
-    margin-bottom: 40px;
-
-    &-item {
-      position: relative;
-
-      & small {
-        position: absolute;
-        bottom: 15px;
-        left: 0;
-        font-size: 13px;
-        letter-spacing: 0;
-      }
-    }
-
-    &-img {
-      display: block;
-    }
-
-    &-btn {
-      width: 90px;
-      height: 14px;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-
-      &--left {
-        background-image: url("../../img/arrow-left.png");
-      }
-
-      &--right {
-        background-image: url("../../img/arrow-right.png");
-      }
-    }
   }
 
   &__consult {

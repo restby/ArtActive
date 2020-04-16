@@ -3435,32 +3435,11 @@ html {
 
 .services {
   padding-bottom: 60px; }
+  .services .row:first-child {
+    background-color: #faf8fb;
+    padding-top: 70px; }
   .services__title {
     margin-bottom: 45px; }
-  .services__slider {
-    margin-bottom: 40px; }
-    .services__slider-item {
-      position: relative; }
-      .services__slider-item small {
-        position: absolute;
-        bottom: 15px;
-        left: 0;
-        font-size: 13px;
-        letter-spacing: 0; }
-    .services__slider-img {
-      display: block; }
-    .services__slider-btn {
-      cursor: pointer;
-      border: none;
-      background-color: transparent;
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      width: 90px;
-      height: 14px; }
-      .services__slider-btn--left {
-        background-image: url("../../img/arrow-left.png"); }
-      .services__slider-btn--right {
-        background-image: url("../../img/arrow-right.png"); }
   .services__consult {
     margin-bottom: 70px; }
     .services__consult-wrap {
@@ -3508,14 +3487,38 @@ html {
     .services__banner-text {
       margin-bottom: 30px; }
 
-.print {
-  padding-top: 65px; }
-  .print__lead {
-    margin-bottom: 50px; }
-  .print__list {
-    margin: 0;
-    margin-bottom: 20px;
-    padding-left: 20px; }
+.print__lead {
+  margin-bottom: 50px; }
+
+.print__list {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 20px; }
+
+.slider {
+  margin-bottom: 40px; }
+  .slider-item {
+    position: relative; }
+    .slider-item small {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      font-size: 13px;
+      letter-spacing: 0; }
+  .slider-img {
+    display: block; }
+  .slider-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 14px; }
+    .slider-btn--left {
+      background-image: url("../../img/arrow-left.png"); }
+    .slider-btn--right {
+      background-image: url("../../img/arrow-right.png"); }
 
 .form {
   -webkit-transform: translateX(-50%) translateY(-50%);
