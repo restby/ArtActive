@@ -17,13 +17,96 @@
   }
 
   &__slider {
+    margin-bottom: 40px;
 
     &-item {
+      position: relative;
 
+      & small {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        font-size: 13px;
+        letter-spacing: 0;
+      }
     }
 
     &-img {
       display: block;
+    }
+
+    &-btn {
+      width: 90px;
+      height: 14px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+
+      &--left {
+        background-image: url("../../img/arrow-left.png");
+      }
+
+      &--right {
+        background-image: url("../../img/arrow-right.png");
+      }
+    }
+  }
+
+  &__consult {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 70px;
+    border-radius: 16px;
+    background-color: $bgc-main-color;
+    box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+
+    & i {
+      display: block;
+      margin-bottom: 10px;
+      font-family: "OpenSansItalic", "Arial", sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+      color: $white-color;
+      letter-spacing: 0;
+    }
+
+    &-lead {
+      display: block;
+      margin-bottom: 30px;
+      font-family: "OpenSansSemiBold", "Arial", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: $white-color;
+      letter-spacing: 0;
+    }
+
+    &-btn {
+      width: 100%;
+    }
+  }
+
+  &__interior {
+    background-image: url("../../img/print-img.mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 300px;
+    padding-bottom: 200px;
+
+    &-lead {
+      margin-bottom: 40px;
+    }
+
+    &-text {
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+
+    &-btn {
+      width: 100%;
     }
   }
 }

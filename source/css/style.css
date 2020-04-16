@@ -3444,8 +3444,71 @@ html {
     margin: 0;
     margin-bottom: 20px;
     padding-left: 20px; }
-  .services__slider-img {
-    display: block; }
+  .services__slider {
+    margin-bottom: 40px; }
+    .services__slider-item {
+      position: relative; }
+      .services__slider-item small {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        font-size: 13px;
+        letter-spacing: 0; }
+    .services__slider-img {
+      display: block; }
+    .services__slider-btn {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 90px;
+      height: 14px; }
+      .services__slider-btn--left {
+        background-image: url("../../img/arrow-left.png"); }
+      .services__slider-btn--right {
+        background-image: url("../../img/arrow-right.png"); }
+  .services__consult {
+    -webkit-box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+    margin-bottom: 70px;
+    box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+    border-radius: 16px;
+    background-color: #65269d;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px; }
+    .services__consult i {
+      display: block;
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-family: "OpenSansItalic", "Arial", sans-serif;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 24px; }
+    .services__consult-lead {
+      display: block;
+      margin-bottom: 30px;
+      color: #ffffff;
+      font-family: "OpenSansSemiBold", "Arial", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 24px; }
+    .services__consult-btn {
+      width: 100%; }
+  .services__interior {
+    background-image: url("../../img/print-img.mobile.png");
+    background-position: 0 300px;
+    background-repeat: no-repeat;
+    padding-bottom: 200px; }
+    .services__interior-lead {
+      margin-bottom: 40px; }
+    .services__interior-text {
+      margin-top: 0;
+      margin-bottom: 45px; }
+    .services__interior-btn {
+      width: 100%; }
 
 .form {
   -webkit-transform: translateX(-50%);
