@@ -159,7 +159,7 @@
     <section class="services">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-xl-6">
             <h2 class="services__title section-title">2. Услуги</h2>
             <!-- /.services__title section-title -->
             <div class="services__item services__item--print print">
@@ -180,30 +180,32 @@
             <!-- /.services__item services__item--print print -->
           </div>
           <!-- /.col-12 -->
-          <div class="col-12">
+          <div class="col-12 col-xl-6">
             <div class="services__item services__item--slider slider">
-              <div class="slider-item">
-                <img class="slider-img" src="img/services-img-1.mobile.png" alt="Растяжка на ул. Ленина">
+              <div class="slider__item">
+                <picture>
+                  <!-- <source media="(min-width: 1170px)" type="image/webp"
+                    srcset="img/services-img-1.desktop.webp"> -->
+                  <source media="(min-width: 1170px)" srcset="img/services-img-1.desktop.png">
+                  <!-- <source media="(min-width: 780px)" type="image/webp"
+                    srcset="img/services-img-1.tablet.webp"> -->
+                  <source media="(min-width: 780px)"
+                    srcset="img/services-img-1.tablet.png">
+                  <!-- <source media="(min-width: 320px)" type="image/webp"
+                    srcset="img/services-img-1.mobile.webp"> -->
+                  <img class="slider__img" src="img/services-img-1.mobile.png"
+                    alt="Растяжка на ул. Ленина">
+                </picture>
                 <small>Растяжка на ул. Ленина</small>
               </div>
-              <!-- /.slider-item -->
-              <!-- <div class="slider-item">
-                  <img class="slider-img" src="img/services-img-2.mobile.png" alt="Растяжка на ул. Ленина">
-                  <small>Растяжка на ул. Ленина</small>
-                </div> -->
-              <!-- /.slider-item -->
-              <!-- <div class="slider-item">
-                  <img class="slider-img" src="img/services-img-3.mobile.png" alt="Растяжка на ул. Ленина">
-                  <small>Растяжка на ул. Ленина</small>
-                </div> -->
-              <!-- /.slider-item -->
-              <button class="slider-btn slider-btn--left" type="button"></button>
-              <button class="slider-btn slider-btn--right" type="button"></button>
+              <!-- /.slider__item -->
+              <button class="slider__btn slider__btn--left" type="button"></button>
+              <button class="slider__btn slider__btn--right" type="button"></button>
             </div>
             <!-- /.slider -->
           </div>
           <!-- /.col-12 -->
-          <div class="col-12">
+          <div class="col-12 col-xl-6">
             <div class="services__item services__item--consult consult">
               <div class="consult__wrap">
                 <i>Есть вопросы?</i>
@@ -219,7 +221,7 @@
         </div>
         <!-- /.row -->
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-xl-6 offset-xl-6">
             <div class="services__item services__item--interior interior">
               <b class="interior__lead section-lead">Широкоформатная
                 печать для вашего
@@ -239,7 +241,7 @@
         </div>
         <!-- /.row -->
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-xl-6">
             <div class="services__item services__item--banner banner">
               <b class="banner__lead section-lead">Оперативная
                 полиграфия — от визитки
@@ -257,11 +259,7 @@
             <!-- /.services__banner -->
           </div>
           <!-- /.col-12 -->
-
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md-5 col-xl-8">
             <div class="services__item services__item--services-form services-form">
               <i>Есть вопросы?</i>
               <b class="services-form__lead">Оставьте заявку на консультацию</b>
@@ -281,7 +279,6 @@
           </div>
           <!-- /.col-12 -->
         </div>
-        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>

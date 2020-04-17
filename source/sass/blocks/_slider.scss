@@ -1,7 +1,7 @@
 .slider {
   margin-bottom: 40px;
 
-  &-item {
+  &__item {
     position: relative;
 
     & small {
@@ -13,11 +13,11 @@
     }
   }
 
-  &-img {
+  &__img {
     display: block;
   }
 
-  &-btn {
+  &__btn {
     width: 90px;
     height: 14px;
     border: none;
@@ -32,6 +32,35 @@
 
     &--right {
       background-image: url("../../img/arrow-right.png");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    margin-bottom: 45px;
+
+    &__item {
+      & small {
+        bottom: 15px;
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    margin-top: 180px;
+    margin-bottom: 0;
+
+    &__item {
+      & small {
+        bottom: 15px;
+        left: 275px;
+        right: auto;
+      }
     }
   }
 }

@@ -52,3 +52,29 @@
     width: 100%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .services-form {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services-form {
+    padding-top: 120px;
+
+    & form {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+     &__input {
+       width: 240px;
+     }
+
+    &__submit-btn {
+      width: 195px;
+    }
+  }
+}

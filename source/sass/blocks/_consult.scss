@@ -1,5 +1,5 @@
 .consult {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 
   &__wrap {
     padding-top: 30px;
@@ -34,5 +34,64 @@
 
   &__btn {
     width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .consult {
+    padding-bottom: 0;
+
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 33px;
+      padding-bottom: 36px;
+      padding-left: 33px;
+      padding-right: 32px;
+    }
+
+    & i {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+
+    &__lead {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+
+    &__btn {
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .consult {
+    &__wrap {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 33px;
+      padding-bottom: 36px;
+      padding-left: 33px;
+      padding-right: 32px;
+    }
+
+    & i {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+
+    &__lead {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+
+    &__btn {
+      width: 250px;
+    }
   }
 }

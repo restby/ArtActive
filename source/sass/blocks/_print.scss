@@ -1,4 +1,6 @@
 .print {
+  padding-top: 40px;
+
   &__lead {
     margin-bottom: 50px;
   }
@@ -7,5 +9,36 @@
     margin: 0;
     padding-left: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .print {
+    padding-top: 65px;
+
+    &__lead {
+      margin-bottom: 65px;
+      font-size: 32px;
+    }
+
+    &__list {
+      padding-left: 20px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .print {
+    padding-top: 0;
+
+    &__lead {
+      margin-bottom: 60px;
+    }
+
+    &__list {
+      margin-bottom: 75px;
+    }
   }
 }
