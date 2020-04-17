@@ -1,0 +1,38 @@
+.consult {
+  margin-bottom: 70px;
+
+  &__wrap {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 16px;
+    background-color: $bgc-main-color;
+    box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
+  }
+
+  & i {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "OpenSansItalic", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: $white-color;
+    letter-spacing: 0;
+  }
+
+  &__lead {
+    display: block;
+    margin-bottom: 30px;
+    font-family: "OpenSansSemiBold", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $white-color;
+    letter-spacing: 0;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

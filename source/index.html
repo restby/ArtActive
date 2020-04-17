@@ -104,24 +104,6 @@
       <!-- /.row -->
       <button class="main-header__nav-btn" type="button"></button>
       <!-- /.main-header__nav-btn -->
-      <div class="form">
-        <button class="form__close-btn" type="button"></button>
-        <!-- /.form__close-btn -->
-        <i>Есть вопросы?</i>
-        <b class="form__lead">Закажите звонок</b>
-        <!-- /.form__lead -->
-        <form action="#">
-          <p>
-            <input class="form__input" type="text" placeholder="Имя">
-          </p>
-          <p>
-            <input class="form__input" type="tel" placeholder="Телефон">
-          </p>
-          <button class="form__submit-btn btn" type="submit">Отправить</button>
-          <!-- /.form__submit-btn -->
-        </form>
-      </div>
-      <!-- /.form -->
     <!-- /.container -->
   </header>
   <!-- /.main-header -->
@@ -236,48 +218,66 @@
           <!-- /.col-12 -->
         </div>
         <!-- /.row -->
-
-        <div class="row">
-
-        </div>
-        <!-- /.row -->
         <div class="row">
           <div class="col-12">
-            <div class="services__interior">
-              <b class="services__interior-lead section-lead">Широкоформатная
+            <div class="services__item services__item--interior interior">
+              <b class="interior__lead section-lead">Широкоформатная
                 печать для вашего
                 интерьера</b>
-              <!-- /.services__interior-lead section-lead -->
-              <p class="services__interior-text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге
+              <!-- /.interior__lead section-lead -->
+              <p class="interior__text">Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге
                 разной плотности, на глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить
                 обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь,
                 различные эффекты</p>
-              <!-- /.services__interior-text -->
-              <button class="services__interior-btn btn" type="button">Оставить заявку</button>
-              <!-- /.services__interior-btn btn -->
+              <!-- /.interior__text -->
+              <button class="interior__btn btn" type="button">Оставить заявку</button>
+              <!-- /.interior__btn btn -->
             </div>
-            <!-- /.services__interior -->
+            <!-- /.services__item services__item--interior interior -->
           </div>
           <!-- /.col-12 -->
         </div>
         <!-- /.row -->
         <div class="row">
           <div class="col-12">
-            <div class="services__banner">
-              <b class="services__banner-lead section-lead">Оперативная
+            <div class="services__item services__item--banner banner">
+              <b class="banner__lead section-lead">Оперативная
                 полиграфия — от визитки
                 до баннера</b>
-              <!-- /.services__banner-lead section-lead -->
-              <p class="services__banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              <!-- /.banner__lead section-lead -->
+              <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-              <!-- /.services__banner-text -->
-              <p class="services__banner-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              <!-- /.banner__text -->
+              <p class="banner__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error. </p>
-              <!-- /.services__banner-text -->
+              <!-- /.banner__text -->
             </div>
             <!-- /.services__banner -->
+          </div>
+          <!-- /.col-12 -->
+
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <div class="services__item services__item--services-form services-form">
+              <i>Есть вопросы?</i>
+              <b class="services-form__lead">Оставьте заявку на консультацию</b>
+              <!-- /.form__lead -->
+              <form action="#">
+                <p>
+                  <input class="services-form__input" type="text" placeholder="Имя">
+                </p>
+                <p>
+                  <input class="services-form__input" type="tel" placeholder="Телефон">
+                </p>
+                <button class="services-form__submit-btn btn" type="submit">Отправить</button>
+                <!-- /.services-form__submit-btn -->
+              </form>
+            </div>
+            <!-- /.services__item services__item--services-form services-form -->
           </div>
           <!-- /.col-12 -->
         </div>
@@ -290,11 +290,29 @@
   <!-- /.content -->
 
   <footer class="main-footer">
-    <div class="overlay"></div>
-    </div>
+
   </footer>
   <!-- /.main-footer -->
-
+  <div class="form">
+    <button class="form__close-btn" type="button"></button>
+    <!-- /.form__close-btn -->
+    <i>Есть вопросы?</i>
+    <b class="form__lead">Закажите звонок</b>
+    <!-- /.form__lead -->
+    <form action="#">
+      <p>
+        <input class="form__input" type="text" placeholder="Имя">
+      </p>
+      <p>
+        <input class="form__input" type="tel" placeholder="Телефон">
+      </p>
+      <button class="form__submit-btn btn" type="submit">Отправить</button>
+      <!-- /.form__submit-btn -->
+    </form>
+  </div>
+  <!-- /.form -->
+  <div class="overlay"></div>
+  </div>
   <!-- Vender scripts -->
   <!-- jquery -->
   <script src="js/libs/jquery-3.4.1.js"></script>

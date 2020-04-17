@@ -6,87 +6,21 @@
     background-color: #faf8fb;
   }
 
-  // & .row:nth-child(-n+3),
-  // & .row:nth-child(5) {
-  //   background-color: #faf8fb;
-  // }
+  & .row:nth-child(2) {
+    padding-bottom: 55px;
+    background-image: url("../../img/bg-print.mobile.png");
+    background-repeat: no-repeat;
+    background-position: 39px 370px;
+  }
 
-  // & .row:nth-child(4) {
-  //   background-image: url("../../img/print-img.mobile.png");
-  //   background-repeat: no-repeat;
-  //   background-position: 45px 370px;
-  // }
+  & .row:nth-child(3) {
+    background-color: #faf8fb;
+    background-image: url("../../img/bg-banner.mobile.png");
+    background-position: 0 620px;
+    background-repeat: no-repeat;
+  }
 
   &__title {
-    margin-bottom: 45px;
-  }
-
-  &__consult {
-    margin-bottom: 70px;
-
-    &-wrap {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 16px;
-      background-color: $bgc-main-color;
-      box-shadow: 0 23px 32px 0 rgba(81, 8, 86, 0.33);
-    }
-
-    & i {
-      display: block;
-      margin-bottom: 10px;
-      font-family: "OpenSansItalic", "Arial", sans-serif;
-      font-size: 13px;
-      line-height: 24px;
-      color: $white-color;
-      letter-spacing: 0;
-    }
-
-    &-lead {
-      display: block;
-      margin-bottom: 30px;
-      font-family: "OpenSansSemiBold", "Arial", sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 24px;
-      color: $white-color;
-      letter-spacing: 0;
-    }
-
-    &-btn {
-      width: 100%;
-    }
-  }
-
-  &__interior {
-    padding-bottom: 200px;
-    padding-top: 70px;
-
-    &-lead {
-      margin-bottom: 40px;
-    }
-
-    &-text {
-      margin-top: 0;
-      margin-bottom: 45px;
-    }
-
-    &-btn {
-      width: 100%;
-    }
-  }
-
-  &__banner {
-    padding-top: 70px;
-
-    &-lead {
-      margin-bottom: 50px;
-    }
-
-    &-text {
-      margin-bottom: 30px;
-    }
+    margin-bottom: 40px;
   }
 }
