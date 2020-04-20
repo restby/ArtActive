@@ -1,0 +1,116 @@
+.contacts {
+  background-image: url("../../img/map.mobile.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  padding-bottom: 200px;
+
+  &__wrap {
+    width: 100%;
+    background-color: $white-color;
+    border-radius: 16px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 60px;
+    box-shadow: 0 23px 32px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    letter-spacing: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &--adress {
+      & svg {
+        width: 11px;
+        height: 17px;
+      }
+
+      & span {
+        margin-left: 15px;
+      }
+    }
+
+    &--mail {
+      & svg {
+        width: 13px;
+        height: 10px;
+      }
+
+      & a {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+
+    &--phone {
+      & svg {
+        width: 14px;
+        height: 15px;
+      }
+
+      & a {
+        display: inline-block;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    background-image: url("../../img/map.tablet.png");
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__wrap {
+      width: 390px;
+      padding-top: 65px;
+      padding-bottom: 85px;
+      padding-left: 60px;
+      padding-right: 55px;
+    }
+
+    &__title {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    background-image: url("../../img/map.desktop.png");
+    background-position: 50% 0;
+    padding-top: 120px;
+    padding-bottom: 150px;
+
+    &__wrap {
+      width: 460px;
+      padding-top: 85px;
+      padding-bottom: 115px;
+      padding-left: 85px;
+      padding-right: 95px;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+    }
+  }
+}
