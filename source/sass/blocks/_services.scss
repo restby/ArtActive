@@ -2,7 +2,6 @@
   padding-bottom: 60px;
 
   & .row:first-child {
-    padding-bottom: 125px;
     background-color: #faf8fb;
     position: relative;
   }
@@ -42,6 +41,8 @@
 
 @media (min-width: $desktop-width) {
   .services {
+    padding-bottom: 0;
+
     & .row:first-child {
       padding-bottom: 125px;
       position: relative;
@@ -53,6 +54,7 @@
     }
 
     & .row:nth-child(3) {
+      padding-bottom: 150px;
       background-image: url("../../img/bg-banner.desktop.png");
       background-position: 590px 0;
     }

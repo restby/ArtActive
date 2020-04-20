@@ -41,19 +41,17 @@ $(function () {
       $(".overlay").slideToggle("fast");
     });
 
-    $(".services__consult-btn").click(function (e) {
+    $(".consult__btn").click(function (e) {
       e.preventDefault();
       $(".form").slideToggle("slow");
       $(".overlay").slideToggle("fast");
     });
 
-    $(".services__interior-btn").click(function (e) {
+    $(".interior__btn").click(function (e) {
       e.preventDefault();
       $(".form").slideToggle("slow");
       $(".overlay").slideToggle("fast");
     });
-
-
   /*slick settings*/
   // $("#reviews-slick").slick({
   //   autoplay: false,

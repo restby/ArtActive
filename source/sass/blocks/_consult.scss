@@ -74,24 +74,29 @@
       left: 0;
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
+      width: 475px;
       padding-top: 33px;
       padding-bottom: 36px;
-      padding-left: 33px;
-      padding-right: 32px;
+      padding-left: 39px;
+      padding-right: 37px;
     }
 
     & i {
       margin-bottom: 0;
-      margin-top: 15px;
+      margin-top: 0;
     }
 
     &__lead {
+      position: absolute;
+      left: 39px;
+      top: 45px;
       margin-bottom: 0;
       margin-top: 15px;
     }
 
     &__btn {
-      width: 250px;
+      width: 170px;
     }
   }
 }
